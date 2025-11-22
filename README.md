@@ -87,8 +87,8 @@ This will save the best model as best_model_MLP.pt.
 
 Once the classifier is trained, main.py will automatically proceed to train the Generator to reconstruct the data. You can adjust the loss weights in main.py to test different hypotheses (e.g., disabling Stationary Loss).
 
-# Hyperparameters in main.py
 ```python
+# Hyperparameters in main.py
 trainer = ReconstructionTrainer(
     cls_model, generator_model, device, dataset_info,
     alpha=5,        # KL Divergence weight
